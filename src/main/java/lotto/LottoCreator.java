@@ -23,4 +23,10 @@ public class LottoCreator {
     public List<Lotto> getLottoList() {
         return lottoList;
     }
+
+    public void printLottoList() {
+        for (Lotto lotto : lottoList) {
+            lotto.printLotto();
+        }
+    }
 }
