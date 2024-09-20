@@ -18,7 +18,6 @@ public class LottoResult {
         for (Lotto lotto : lottoList) {
             List<Integer> common = new ArrayList<>(winningNumberInput.getWinningNumbers());
             common.retainAll(lotto.getNumbers());
-
             checkCondition(common.size(), lotto.getNumbers(), winningNumberInput);
         }
     }
